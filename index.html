@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raj Kumar Gupta – Full-Stack Developer & Competitive Programmer</title>
+  <meta name="description" content="Portfolio of Raj Kumar Gupta – B.Tech ECE student at NIT Agartala, LeetCode Knight (1920), Codeforces Specialist (1445), Full-Stack Developer and Open Source Contributor." />
+  <meta name="keywords" content="Raj Kumar Gupta, NIT Agartala, LeetCode Knight, Codeforces Specialist, Full-Stack Developer, Competitive Programmer, AlgoBattle, StudentOS, Portfolio" />
+  <meta name="author" content="Raj Kumar Gupta" />
+  <meta property="og:title" content="Raj Kumar Gupta – Developer Portfolio" />
+  <meta property="og:description" content="Full-Stack Developer | LeetCode Knight | Codeforces Specialist" />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon SVG inline -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>RKG<span class="logo-bracket">/&gt;</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#opensource" class="nav-link">Open Source</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="resume.pdf" class="nav-cta" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <section id="hero" class="hero-section">
+    <!-- Particle canvas -->
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+    <!-- Grid overlay -->
+    <div class="grid-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        Available for internships & collaborations
+      </div>
+
+      <h1 class="hero-name reveal">
+        Raj Kumar<br /><span class="gradient-text">Gupta</span>
+      </h1>
+
+      <p class="hero-tagline reveal">
+        Full-Stack Developer &nbsp;|&nbsp; Competitive Programmer &nbsp;|&nbsp; Open Source Contributor
+      </p>
+
+      <div class="hero-typing reveal">
+        <span class="typing-prefix">&gt;&nbsp;</span>
+        <span id="typingText" class="typing-text"></span>
+        <span class="typing-cursor">|</span>
+      </div>
+
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7l1 1h7a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M16 3l1 4H9l1-4"/></svg>
+          View Projects
+        </a>
+        <a href="resume.pdf" class="btn btn-secondary" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Contact Me
+        </a>
+      </div>
+
+      <div class="hero-socials reveal">
+        <a href="https://github.com/rajkumargupta0832" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/raj-kumar-gupta-0832" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://codeforces.com/profile/rajkumargupta0832" target="_blank" rel="noopener" class="social-link" aria-label="Codeforces">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 7.5C5.328 7.5 6 8.172 6 9v10.5c0 .828-.672 1.5-1.5 1.5h-3C.672 21 0 20.328 0 19.5V9c0-.828.672-1.5 1.5-1.5h3zm9-4.5c.828 0 1.5.672 1.5 1.5V19.5c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5V4.5C9 3.672 9.672 3 10.5 3h3zm9 7.5c.828 0 1.5.672 1.5 1.5v9c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5v-9c0-.828.672-1.5 1.5-1.5h3z"/></svg>
+        </a>
+        <a href="https://leetcode.com/rajkumargupta0832" target="_blank" rel="noopener" class="social-link" aria-label="LeetCode">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+        </a>
+        <a href="https://codolio.com/profile/rajkumargupta0832" target="_blank" rel="noopener" class="social-link" aria-label="Codolio">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero photo -->
+    <div class="hero-photo-wrapper reveal">
+      <div class="photo-ring"></div>
+      <div class="photo-ring photo-ring-2"></div>
+      <img src="profile.jpg" alt="Raj Kumar Gupta" class="hero-photo" />
+      <div class="photo-glow"></div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">01. Who Am I</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Passionate developer blending algorithms with full-stack craft</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="about-intro">
+            Hey! I'm <strong>Raj Kumar Gupta</strong>, a B.Tech Electronics & Communication Engineering student at 
+            <strong class="highlight">NIT Agartala</strong> (2023–2027). I'm deeply passionate about competitive programming, 
+            system design, and building impactful full-stack products.
+          </p>
+          <p>
+            As a <strong class="highlight">LeetCode Knight</strong> (Rating 1920, Top 3%) and 
+            <strong class="highlight">Codeforces Specialist</strong> (Rating 1445), I've solved 1600+ DSA/CP problems. 
+            I also serve as a <strong class="highlight">CP Mentor</strong> at the Developer's Club (DCC), NIT Agartala, 
+            helping juniors crack competitive programming.
+          </p>
+          <p>
+            Beyond code, I hold <strong class="highlight">NCC A & B Certificates</strong> — instilling in me discipline, 
+            leadership, and a never-quit mindset.
+          </p>
+
+          <div class="about-tags">
+            <span class="tag">🎯 Problem Solver</span>
+            <span class="tag">🚀 Builder</span>
+            <span class="tag">🎖️ NCC Certified</span>
+            <span class="tag">👨‍🏫 CP Mentor</span>
+            <span class="tag">🌍 Open Source</span>
+          </div>
+        </div>
+
+        <div class="about-cards reveal">
+          <div class="edu-card glass-card">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-content">
+              <h4>B.Tech – ECE</h4>
+              <p class="edu-place">NIT Agartala</p>
+              <p class="edu-year">2023 – 2027</p>
+              <div class="edu-grade">CGPA <span class="grade-value">8.41</span></div>
+            </div>
+          </div>
+
+          <div class="edu-card glass-card">
+            <div class="edu-icon">🏫</div>
+            <div class="edu-content">
+              <h4>Class XII – Science</h4>
+              <p class="edu-place">Sainik School Gopalganj</p>
+              <p class="edu-year">2023</p>
+              <div class="edu-grade">Score <span class="grade-value">92.80%</span></div>
+            </div>
+          </div>
+
+          <div class="edu-card glass-card">
+            <div class="edu-icon">📚</div>
+            <div class="edu-content">
+              <h4>Class X</h4>
+              <p class="edu-place">Sainik School Gopalganj</p>
+              <p class="edu-year">2021</p>
+              <div class="edu-grade">Score <span class="grade-value">93.60%</span></div>
+            </div>
+          </div>
+
+          <div class="edu-card glass-card ncc-card">
+            <div class="edu-icon">🎖️</div>
+            <div class="edu-content">
+              <h4>NCC Certificates</h4>
+              <p class="edu-place">National Cadet Corps</p>
+              <div class="ncc-badges">
+                <span class="ncc-badge">A Certificate</span>
+                <span class="ncc-badge">B Certificate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ ACHIEVEMENTS ═══════════════════════ -->
+  <section id="achievements" class="section achievements-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">02. Track Record</span>
+        <h2 class="section-title">Achievements &amp; <span class="gradient-text">Rankings</span></h2>
+        <p class="section-subtitle">Numbers that speak louder than words</p>
+      </div>
+
+      <!-- Stat Counters -->
+      <div class="stats-grid reveal">
+        <div class="stat-card glass-card">
+          <div class="stat-icon lc-icon">⚔️</div>
+          <div class="stat-num" data-target="1920">0</div>
+          <div class="stat-label">LeetCode Rating</div>
+          <div class="stat-sub">Knight · Top 3% Globally</div>
+        </div>
+        <div class="stat-card glass-card">
+          <div class="stat-icon">🔵</div>
+          <div class="stat-num" data-target="1445">0</div>
+          <div class="stat-label">Codeforces Rating</div>
+          <div class="stat-sub">Specialist</div>
+        </div>
+        <div class="stat-card glass-card">
+          <div class="stat-icon">🧩</div>
+          <div class="stat-num" data-target="1600" data-suffix="+">0</div>
+          <div class="stat-label">Problems Solved</div>
+          <div class="stat-sub">Across all platforms</div>
+        </div>
+        <div class="stat-card glass-card">
+          <div class="stat-icon">🏆</div>
+          <div class="stat-num" data-target="72">0</div>
+          <div class="stat-label">Global Rank</div>
+          <div class="stat-sub">CodeChef Starters 138</div>
+        </div>
+      </div>
+
+      <!-- Achievement Badges -->
+      <div class="achievements-grid">
+        <div class="achievement-card glass-card reveal">
+          <div class="achievement-header">
+            <span class="platform-badge lc">LeetCode</span>
+            <span class="rank-badge knight">⚔️ Knight</span>
+          </div>
+          <h3>Rating 1920 · Top 3% Globally</h3>
+          <ul class="achievement-list">
+            <li>🥇 <strong>AIR 285</strong> – Weekly Contest 441</li>
+            <li>🥈 <strong>AIR 390</strong> – Weekly Contest 475</li>
+            <li>🥉 <strong>AIR 620</strong> – Weekly Contest 442</li>
+            <li>✅ <strong>800+</strong> problems solved</li>
+          </ul>
+        </div>
+
+        <div class="achievement-card glass-card reveal">
+          <div class="achievement-header">
+            <span class="platform-badge cf">Codeforces</span>
+            <span class="rank-badge specialist">🔵 Specialist</span>
+          </div>
+          <h3>Rating 1445 · Consistent Climber</h3>
+          <ul class="achievement-list">
+            <li>🥈 <strong>Global Rank 961</strong> – Round 1017 (Div 4)</li>
+            <li>✅ <strong>400+</strong> problems solved</li>
+            <li>📈 Consistent contest participation</li>
+          </ul>
+        </div>
+
+        <div class="achievement-card glass-card reveal">
+          <div class="achievement-header">
+            <span class="platform-badge cc">CodeChef</span>
+            <span class="rank-badge gold">🏆 Champion</span>
+          </div>
+          <h3>Podium Finishes</h3>
+          <ul class="achievement-list">
+            <li>🥇 <strong>Global Rank 72</strong> – Starters 138 (Div 3)</li>
+          </ul>
+        </div>
+
+        <div class="achievement-card glass-card reveal">
+          <div class="achievement-header">
+            <span class="platform-badge iicpc">IICPC</span>
+            <span class="rank-badge silver">🎯 Prelims</span>
+          </div>
+          <h3>CodeFest'25 – IICPC Prelims</h3>
+          <ul class="achievement-list">
+            <li>🎯 <strong>Rank 1220</strong> among 45,000+ participants</li>
+            <li>🏅 Top ~2.7% in national contest</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ PROJECTS ═══════════════════════ -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">03. What I've Built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Real-world systems with production-grade architecture</p>
+      </div>
+
+      <!-- Project 1: AlgoBattle -->
+      <div class="project-card glass-card featured reveal">
+        <div class="project-meta">
+          <span class="project-num">01</span>
+          <span class="project-featured-badge">⭐ Featured</span>
+        </div>
+        <div class="project-body">
+          <div class="project-info">
+            <h3 class="project-title">
+              AlgoBattle
+              <span class="project-subtitle">Real-time 1v1 Competitive Coding Arena</span>
+            </h3>
+            <p class="project-desc">
+              A full-stack real-time competitive coding platform where developers battle 1v1 with live code 
+              execution, ELO-based matchmaking, and AI bot opponents. Features an expanding search window 
+              pairing algorithm and a sandboxed judge running submissions against 25 hidden test cases in 
+              isolated child processes.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">⚡</span>
+                <span>Real-time 1v1 via Socket.IO + ELO matchmaking (6 tiers)</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🛡️</span>
+                <span>Sandboxed code judge – 25 hidden test cases per problem</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🤖</span>
+                <span>AI bots (Groq API) with human-like timings & deliberate mistakes</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🏗️</span>
+                <span>Turborepo monorepo: web, socket-server, db, judge, types</span>
+              </div>
+            </div>
+            <div class="project-stack">
+              <span class="tech-tag">Next.js 14</span>
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">Socket.IO</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Prisma</span>
+              <span class="tech-tag">Redis</span>
+              <span class="tech-tag">Groq API</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">Turborepo</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/rajkumargupta0832/algobattle" target="_blank" rel="noopener" class="project-link btn-project">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="code-window">
+              <div class="code-window-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="code-file">algobattle/matchmaking.ts</span>
+              </div>
+              <pre class="code-content"><code><span class="kw">const</span> findMatch = <span class="kw">async</span> (user: Player) =&gt; {
+  <span class="kw">let</span> window = INITIAL_RANGE;
+  
+  <span class="kw">while</span> (!matched) {
+    <span class="kw">const</span> opponent = <span class="kw">await</span> redis
+      .findInRange(user.elo - window, 
+                   user.elo + window);
+
+    <span class="kw">if</span> (opponent) {
+      <span class="fn">startBattle</span>(user, opponent);
+      <span class="kw">break</span>;
+    }
+    window += EXPAND_STEP; <span class="cm">// expand search</span>
+    <span class="kw">await</span> <span class="fn">sleep</span>(POLL_INTERVAL);
+  }
+};</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: StudentOS -->
+      <div class="project-card glass-card featured reveal">
+        <div class="project-meta">
+          <span class="project-num">02</span>
+          <span class="project-featured-badge">⭐ Featured</span>
+        </div>
+        <div class="project-body">
+          <div class="project-info">
+            <h3 class="project-title">
+              StudentOS 2.0
+              <span class="project-subtitle">Unified Developer Portfolio & AI Coach</span>
+            </h3>
+            <p class="project-desc">
+              A full-stack developer dashboard that aggregates live stats from LeetCode, Codeforces, and GitHub 
+              with interactive charts, leaderboards, and a context-aware AI Coding Coach powered by Llama 3.3 70B. 
+              Features Redis + BullMQ background sync workers and JWT token rotation.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">📊</span>
+                <span>Live stats aggregation from LeetCode, Codeforces, GitHub</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🤖</span>
+                <span>AI Coach (Llama 3.3 70B) with CP rating & weak-tag injection</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🏅</span>
+                <span>Achievement badges: Common → Legendary milestone system</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">⚙️</span>
+                <span>Redis + BullMQ background workers + JWT refresh token rotation</span>
+              </div>
+            </div>
+            <div class="project-stack">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Redis</span>
+              <span class="tech-tag">BullMQ</span>
+              <span class="tech-tag">Groq API</span>
+              <span class="tech-tag">Recharts</span>
+              <span class="tech-tag">Tailwind CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/rajkumargupta0832/studentos" target="_blank" rel="noopener" class="project-link btn-project">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link btn-project btn-live">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="dashboard-preview">
+              <div class="dash-header">
+                <div class="dash-avatar"></div>
+                <div>
+                  <div class="dash-name"></div>
+                  <div class="dash-sub"></div>
+                </div>
+                <div class="dash-badge">🏅 Legendary</div>
+              </div>
+              <div class="dash-stats">
+                <div class="dash-stat">
+                  <div class="ds-label">LeetCode</div>
+                  <div class="ds-val" style="color:#f59e0b">1920</div>
+                  <div class="ds-bar"><div class="ds-fill" style="width:80%;background:#f59e0b"></div></div>
+                </div>
+                <div class="dash-stat">
+                  <div class="ds-label">Codeforces</div>
+                  <div class="ds-val" style="color:#3b82f6">1445</div>
+                  <div class="ds-bar"><div class="ds-fill" style="width:60%;background:#3b82f6"></div></div>
+                </div>
+                <div class="dash-stat">
+                  <div class="ds-label">Problems</div>
+                  <div class="ds-val" style="color:#06b6d4">1600+</div>
+                  <div class="ds-bar"><div class="ds-fill" style="width:90%;background:#06b6d4"></div></div>
+                </div>
+              </div>
+              <div class="dash-ai">
+                <span class="ai-icon">🤖</span>
+                <span class="ai-text">AI Coach: Focus on DP tree problems this week…</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Video Hosting Backend -->
+      <div class="project-card glass-card reveal">
+        <div class="project-meta">
+          <span class="project-num">03</span>
+        </div>
+        <div class="project-body project-body-single">
+          <div class="project-info">
+            <h3 class="project-title">
+              Video Hosting Backend
+              <span class="project-subtitle">Production-Ready RESTful API System</span>
+            </h3>
+            <p class="project-desc">
+              A scalable video hosting backend with 35+ RESTful APIs covering videos, playlists, subscriptions, 
+              and social interactions. Features JWT authentication, MongoDB aggregation pipelines for analytics, 
+              and a Multer + Cloudinary media pipeline.
+            </p>
+            <div class="project-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">🔌</span>
+                <span>35+ RESTful APIs – videos, playlists, subscriptions, social</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🔐</span>
+                <span>JWT auth + bcrypt hashing + cookie-based sessions</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">📈</span>
+                <span>MongoDB aggregation pipelines for watch history & analytics</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">☁️</span>
+                <span>Multer + Cloudinary media pipeline for video & thumbnails</span>
+              </div>
+            </div>
+            <div class="project-stack">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express.js</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Cloudinary</span>
+              <span class="tech-tag">Multer</span>
+              <span class="tech-tag">JWT</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/rajkumargupta0832/video-hosting-backend" target="_blank" rel="noopener" class="project-link btn-project">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ OPEN SOURCE ═══════════════════════ -->
+  <section id="opensource" class="section os-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">04. Community</span>
+        <h2 class="section-title">Open Source <span class="gradient-text">Contributions</span></h2>
+        <p class="section-subtitle">Giving back to the developer community</p>
+      </div>
+
+      <div class="os-card glass-card reveal">
+        <div class="os-header">
+          <div class="os-project-info">
+            <div class="os-logo">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </div>
+            <div>
+              <h3 class="os-project-name">Pyodide</h3>
+              <p class="os-project-desc">Python in the browser via WebAssembly</p>
+            </div>
+          </div>
+          <div class="os-badges">
+            <span class="pr-badge merged">✓ Merged</span>
+            <span class="pr-number">PR #6142</span>
+          </div>
+        </div>
+
+        <div class="os-body">
+          <div class="os-contribution">
+            <h4>Documentation Contribution</h4>
+            <p>
+              Added comprehensive <strong>Vite bundler documentation</strong> to the Pyodide project — covering package 
+              handling options, bundle configuration patterns, and integration guides for running Python in the browser 
+              via WebAssembly. This contribution helps developers seamlessly integrate Pyodide into modern Vite-based 
+              JavaScript applications.
+            </p>
+          </div>
+          <div class="os-diff">
+            <div class="diff-header">
+              <span class="diff-file">docs/usage/bundler-vite.md</span>
+              <div class="diff-stats">
+                <span class="diff-add">+247</span>
+                <span class="diff-del">−0</span>
+              </div>
+            </div>
+            <pre class="diff-content"><code><span class="diff-plus">+ ## Using Pyodide with Vite</span>
+<span class="diff-plus">+ Vite provides several options for handling Python</span>
+<span class="diff-plus">+ packages and WebAssembly modules...</span>
+<span class="diff-plus">+</span>
+<span class="diff-plus">+ ### Package Handling Options</span>
+<span class="diff-plus">+ import { loadPyodide } from 'pyodide';</span>
+<span class="diff-plus">+ // Configure Vite to handle .wasm files</span></code></pre>
+          </div>
+        </div>
+
+        <div class="os-footer">
+          <a href="https://github.com/pyodide/pyodide/pull/6142" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+            View PR on GitHub →
+          </a>
+          <span class="os-impact">🌍 Helps thousands of WebAssembly developers worldwide</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ SKILLS ═══════════════════════ -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">05. Toolkit</span>
+        <h2 class="section-title">Skills &amp; <span class="gradient-text">Technologies</span></h2>
+        <p class="section-subtitle">Technologies I work with every day</p>
+      </div>
+
+      <div class="skills-container">
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-group-icon">💻</span> Languages
+          </h3>
+          <div class="skill-pills">
+            <div class="skill-pill" data-level="95"><span class="sp-icon">⚡</span>C++<span class="sp-bar"><span class="sp-fill" style="--w:95%"></span></span></div>
+            <div class="skill-pill" data-level="90"><span class="sp-icon">🟨</span>JavaScript<span class="sp-bar"><span class="sp-fill" style="--w:90%"></span></span></div>
+            <div class="skill-pill" data-level="85"><span class="sp-icon">🔷</span>TypeScript<span class="sp-bar"><span class="sp-fill" style="--w:85%"></span></span></div>
+            <div class="skill-pill" data-level="75"><span class="sp-icon">🐍</span>Python<span class="sp-bar"><span class="sp-fill" style="--w:75%"></span></span></div>
+            <div class="skill-pill" data-level="70"><span class="sp-icon">☕</span>Java<span class="sp-bar"><span class="sp-fill" style="--w:70%"></span></span></div>
+            <div class="skill-pill" data-level="90"><span class="sp-icon">🌐</span>HTML/CSS<span class="sp-bar"><span class="sp-fill" style="--w:90%"></span></span></div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-group-icon">⚛️</span> Frameworks &amp; Libraries
+          </h3>
+          <div class="skill-pills">
+            <div class="skill-pill"><span class="sp-icon">⚛️</span>React.js</div>
+            <div class="skill-pill"><span class="sp-icon">▲</span>Next.js 14</div>
+            <div class="skill-pill"><span class="sp-icon">🟩</span>Node.js</div>
+            <div class="skill-pill"><span class="sp-icon">🚂</span>Express.js</div>
+            <div class="skill-pill"><span class="sp-icon">🔌</span>Socket.IO</div>
+            <div class="skill-pill"><span class="sp-icon">💨</span>Tailwind CSS</div>
+            <div class="skill-pill"><span class="sp-icon">🎞️</span>Framer Motion</div>
+            <div class="skill-pill"><span class="sp-icon">📊</span>Recharts</div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-group-icon">🗄️</span> Databases &amp; Cache
+          </h3>
+          <div class="skill-pills">
+            <div class="skill-pill"><span class="sp-icon">🐘</span>PostgreSQL</div>
+            <div class="skill-pill"><span class="sp-icon">🍃</span>MongoDB</div>
+            <div class="skill-pill"><span class="sp-icon">🔴</span>Redis</div>
+            <div class="skill-pill"><span class="sp-icon">🔺</span>Prisma</div>
+            <div class="skill-pill"><span class="sp-icon">🐾</span>Mongoose</div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-group-icon">🛠️</span> DevOps &amp; Tools
+          </h3>
+          <div class="skill-pills">
+            <div class="skill-pill"><span class="sp-icon">🐳</span>Docker</div>
+            <div class="skill-pill"><span class="sp-icon">🏗️</span>Turborepo</div>
+            <div class="skill-pill"><span class="sp-icon">🔧</span>Git / GitHub</div>
+            <div class="skill-pill"><span class="sp-icon">▲</span>Vercel</div>
+            <div class="skill-pill"><span class="sp-icon">🔥</span>Firebase</div>
+            <div class="skill-pill"><span class="sp-icon">☁️</span>Cloudinary</div>
+            <div class="skill-pill"><span class="sp-icon">📮</span>Postman</div>
+            <div class="skill-pill"><span class="sp-icon">⚙️</span>BullMQ</div>
+            <div class="skill-pill"><span class="sp-icon">🤖</span>Groq API</div>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="skill-group-title">
+            <span class="skill-group-icon">🧠</span> CS Fundamentals
+          </h3>
+          <div class="skill-pills">
+            <div class="skill-pill"><span class="sp-icon">🌲</span>DSA</div>
+            <div class="skill-pill"><span class="sp-icon">🔷</span>OOP</div>
+            <div class="skill-pill"><span class="sp-icon">💽</span>OS</div>
+            <div class="skill-pill"><span class="sp-icon">🗃️</span>DBMS</div>
+            <div class="skill-pill"><span class="sp-icon">🌐</span>Computer Networks</div>
+            <div class="skill-pill"><span class="sp-icon">🔗</span>REST APIs</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">06. Let's Connect</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">Open to internships, projects, and interesting conversations</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's build something great together</h3>
+          <p>Whether you have a project idea, an internship opportunity, or just want to chat about 
+          competitive programming — my inbox is always open!</p>
+
+          <div class="contact-details">
+            <a href="mailto:kumarraj0932@gmail.com" class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-value">kumarraj0932@gmail.com</div>
+              </div>
+            </a>
+
+            <a href="tel:+919113161047" class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4a2 2 0 0 1 1.99-2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l1.77-1.77a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Phone</div>
+                <div class="contact-value">+91-9113161047</div>
+              </div>
+            </a>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="contact-label">Location</div>
+                <div class="contact-value">Patna, Bihar, India</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://github.com/rajkumargupta0832" target="_blank" rel="noopener" class="c-social" aria-label="GitHub">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/raj-kumar-gupta-0832" target="_blank" rel="noopener" class="c-social" aria-label="LinkedIn">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://leetcode.com/rajkumargupta0832" target="_blank" rel="noopener" class="c-social" aria-label="LeetCode">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+            </a>
+            <a href="https://codeforces.com/profile/rajkumargupta0832" target="_blank" rel="noopener" class="c-social" aria-label="Codeforces">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M4.5 7.5C5.328 7.5 6 8.172 6 9v10.5c0 .828-.672 1.5-1.5 1.5h-3C.672 21 0 20.328 0 19.5V9c0-.828.672-1.5 1.5-1.5h3zm9-4.5c.828 0 1.5.672 1.5 1.5V19.5c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5V4.5C9 3.672 9.672 3 10.5 3h3zm9 7.5c.828 0 1.5.672 1.5 1.5v9c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5v-9c0-.828.672-1.5 1.5-1.5h3z"/></svg>
+            </a>
+            <a href="https://codolio.com/profile/rajkumargupta0832" target="_blank" rel="noopener" class="c-social" aria-label="Codolio">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card reveal" id="contactForm">
+          <div class="form-group">
+            <label for="contactName" class="form-label">Your Name</label>
+            <input type="text" id="contactName" name="name" class="form-input" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="contactEmail" class="form-label">Email Address</label>
+            <input type="email" id="contactEmail" name="email" class="form-input" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="contactMessage" class="form-label">Message</label>
+            <textarea id="contactMessage" name="message" class="form-textarea" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            ✅ Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#hero" class="footer-logo">
+          <span class="logo-bracket">&lt;</span>RKG<span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Built with ❤️ and lots of ☕ — Raj Kumar Gupta</p>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Raj Kumar Gupta. All rights reserved.</p>
+        <p class="footer-made">
+          <span class="mono">console.log("Happy Coding! 🚀")</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
